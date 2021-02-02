@@ -5,6 +5,10 @@
   <router-link to="/">Home</router-link>
   |
   <router-link to="/about">About</router-link>
+  <span>
+    |
+    <router-link to="/board">Board</router-link>
+  </span>
 
 </header>
 </template>

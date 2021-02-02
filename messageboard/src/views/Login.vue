@@ -4,7 +4,7 @@
     <input type="text" v-model="username">
     <p>Password</p>
     <input type="text" v-model="password">
-    <br><br><button :class="{inActive:isBlank}" :disabled="!isBlank">Login</button>
+    <br><br><button :disabled="!isfull" >Login</button>
   </div>
 </template>
 <script>
@@ -13,20 +13,17 @@ export default {
   data:function(){
     return{
       username:'',
-      password:''
+      password:'',
+      toBoard:true
     }
   }
   ,
   computed:{
-        isBlank:function(){
+        isfull:function(){
           return this.username && this.password
         }
 }
 }
 </script>
 <style>
-.inActives{
-  pointer-events: none;
-  color: gray;
-}
 </style>
