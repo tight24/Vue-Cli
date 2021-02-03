@@ -8,10 +8,9 @@
 </template>
 <script>
 import myheader from './components/myheader.vue'
-
 export default {
   components:{
-    myheader
+    myheader,
   }
 }
 </script>

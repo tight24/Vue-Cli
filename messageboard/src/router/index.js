@@ -6,6 +6,7 @@ import Login from '../views/Login.vue'
 import Board from '../views/Board.vue'
 
 
+
 Vue.use(VueRouter)
 
 const routes = [
