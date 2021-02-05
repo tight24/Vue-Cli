@@ -3,7 +3,7 @@
     <Message></Message>
     <textarea  cols="50" rows="5"  v-model="message"></textarea>
     <br><br>
-    <button :disabled="!isfull" @click="add">Send</button>
+    <button :disabled="!isful" @click="send">Send</button>
   </div>
 </template>
 <script>
@@ -14,11 +14,11 @@ export default {
   },
   data:function(){
     return {
-        message:''
+      message:''
     }
   },
   computed:{
-    isfull:function(){
+    isful:function(){
       return this.message
     }
   }
