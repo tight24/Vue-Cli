@@ -9,9 +9,8 @@ import Board from '../views/Board.vue'
 Vue.use(Vuex)
 Vue.use(VueRouter)
 
-const store=new Vuex.Store({
 
-})
+
 
 const routes = [
   {

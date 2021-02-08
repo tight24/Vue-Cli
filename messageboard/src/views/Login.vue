@@ -29,10 +29,7 @@ export default {
   },
   methods:{
     login:function(){
-      this.user.push({
-        'name':this.user.name,
-        'password':this.user.password
-      });
+      this.$store.commit('User/setParams', this.user.name, this.user.password)
       this.user.name='';
       this.user.password='';
     }
